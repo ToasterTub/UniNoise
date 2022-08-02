@@ -7,11 +7,12 @@ Go to Window/UniNoise to use it.
 
 In the top right of the Editor Window there's a little information button. Click that to learn more!
 
-Below are some images of the Editor window and some images generated with it!
+Below are some images of the Editor window and some images generated with it (Saved as presets which are included)!
 
 A                          |  B
 :-------------------------:|:-------------------------:
-![Screenshot 2022-08-02 005109](https://user-images.githubusercontent.com/109846805/182303415-407e2689-500f-45e8-bb5c-15c6a19c646c.png) | ![Screenshot 2022-08-02 005201](https://user-images.githubusercontent.com/109846805/182303428-25ca67c0-fe26-4a96-bf83-2448d670b0b1.png)
+![Generate Tab A](https://user-images.githubusercontent.com/109846805/182303415-407e2689-500f-45e8-bb5c-15c6a19c646c.png) | ![Generate Tab B](https://user-images.githubusercontent.com/109846805/182303428-25ca67c0-fe26-4a96-bf83-2448d670b0b1.png)
+![Normal Map / Edit Tab](https://user-images.githubusercontent.com/109846805/182304230-e853fd3e-438a-4a2e-894a-c805b8473dfe.png) | ![Color Ramp](https://user-images.githubusercontent.com/109846805/182304236-82b156d1-9f06-422c-a2a2-633072456d6f.png)
 ![Triangles0](https://user-images.githubusercontent.com/109846805/182302375-12ac03a9-d706-43f8-adcc-75c38cabf542.png) | ![Triangles1](https://user-images.githubusercontent.com/109846805/182302376-4dfa76bc-e63f-4f25-bf94-0b3471e4d15f.png)
 ![Truchet0](https://user-images.githubusercontent.com/109846805/182302377-74ff654e-72b9-4a6e-8cac-60557938922a.png) | ![Truchet1](https://user-images.githubusercontent.com/109846805/182302379-42519b9c-7a24-4eba-9290-03d6717ffd83.png)
 ![Waves0](https://user-images.githubusercontent.com/109846805/182302380-66c78ee7-f96c-4216-8b2f-e31207232529.png) | ![Waves1](https://user-images.githubusercontent.com/109846805/182302381-14cfa7eb-9cbc-444a-bb03-a3563848882d.png)
