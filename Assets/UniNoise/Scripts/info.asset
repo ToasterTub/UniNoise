@@ -1,0 +1,2002 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 572289bb961689847a6cdf8448597ed1, type: 3}
+  m_Name: info
+  m_EditorClassIdentifier: 
+  saveLocation: /Materials/X_BASIC/
+  presets:
+  - name: Hot Rocks
+    genOrEditTypeName: Perlin
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 8E7878
+        time: 0
+      - color: 3A3939
+        time: 0.3966888
+      - color: B81B08
+        time: 0.7272755
+      - color: F7FF00
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 4
+    - variableName: scalex
+      variableType: System.Single
+      variableValue: 5
+    - variableName: scaley
+      variableType: System.Single
+      variableValue: 5
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 8
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.18
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0.00377
+    - variableName: step
+      variableType: System.Single
+      variableValue: 0.25
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: -0.073
+    - variableName: lacunarity
+      variableType: System.Single
+      variableValue: 3
+    - variableName: weight
+      variableType: System.Single
+      variableValue: 0.575
+    - variableName: turbulent
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0.217
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+    - variableName: hasPreviewImageUpdate
+      variableType: System.Boolean
+      variableValue: False
+  - name: Emerald
+    genOrEditTypeName: Triangles
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 090807
+        time: 0
+      - color: A6732B
+        time: 0.09504845
+      - color: E7CC2A
+        time: 0.24586862
+      - color: 202220
+        time: 0.33057144
+      - color: 71A44F
+        time: 0.5950408
+      - color: F2F36B
+        time: 0.9256123
+      isBlend: 1
+    variables:
+    - variableName: scaleX
+      variableType: System.Single
+      variableValue: 3
+    - variableName: scaleY
+      variableType: System.Single
+      variableValue: 3
+    - variableName: wobblex
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbley
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: flipHalfY
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Cool Orbs
+    genOrEditTypeName: Vornoi 2
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: B6CFE3
+        time: 0.30099946
+      - color: A49AD7
+        time: 0.4119936
+      - color: 3A1B2E
+        time: 0.55716795
+      - color: 3684A7
+        time: 0.70891887
+      - color: 272A2C
+        time: 0.8852369
+      isBlend: 1
+    variables:
+    - variableName: pointCount
+      variableType: System.Int32
+      variableValue: 16
+    - variableName: second
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: lastPointCount
+      variableType: System.Int32
+      variableValue: 16
+    - variableName: hasPoints
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: yPosition
+      variableType: System.Single
+      variableValue: 0
+    - variableName: yMultiplier
+      variableType: System.Single
+      variableValue: 0.835
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: warpX
+      variableType: System.Single
+      variableValue: 0
+    - variableName: warpY
+      variableType: System.Single
+      variableValue: 0
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0
+    - variableName: octaveWeight
+      variableType: System.Single
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Stars
+    genOrEditTypeName: Basic Noise
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: FFFFFF
+        time: 0
+      - color: 000000
+        time: 0.028931106
+      - color: 000000
+        time: 0.39049363
+      - color: EE5300
+        time: 0.44422063
+      - color: 000000
+        time: 0.4937972
+      - color: 00F4FF
+        time: 0.52892345
+      - color: 000000
+        time: 0.5805753
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Rorschach
+    genOrEditTypeName: Spacial
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: FFFFFF
+        time: 0
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: pointCount
+      variableType: System.Int32
+      variableValue: 9
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 7.9
+    - variableName: saw
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.535
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Marching
+    genOrEditTypeName: March Noise
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: FFFFFF
+        time: 0
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 33
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: detail
+      variableType: System.Single
+      variableValue: 1
+    - variableName: detailWeight
+      variableType: System.Single
+      variableValue: 0.95
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1
+    - variableName: secondaryScale
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: percent
+      variableType: System.Single
+      variableValue: 1
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Circuit
+    genOrEditTypeName: March Circles
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 6BAD6B
+        time: 0
+      - color: 578957
+        time: 0.3760281
+      - color: D98600
+        time: 0.44008544
+      - color: FFF8ED
+        time: 0.47313648
+      - color: ECC37E
+        time: 0.5805753
+      - color: 154D15
+        time: 0.654963
+      - color: 406A40
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 19
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: detail
+      variableType: System.Single
+      variableValue: 1
+    - variableName: detailWeight
+      variableType: System.Single
+      variableValue: 0.95
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1
+    - variableName: secondaryScale
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: percent
+      variableType: System.Single
+      variableValue: 1
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Chilly
+    genOrEditTypeName: March Noise
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: B6CFE3
+        time: 0.30099946
+      - color: A49AD7
+        time: 0.4119936
+      - color: 3A1B2E
+        time: 0.55716795
+      - color: 3684A7
+        time: 0.70891887
+      - color: 272A2C
+        time: 0.8852369
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 7
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 19
+    - variableName: detail
+      variableType: System.Single
+      variableValue: 2
+    - variableName: detailWeight
+      variableType: System.Single
+      variableValue: 0.95
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1.64
+    - variableName: secondaryScale
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: percent
+      variableType: System.Single
+      variableValue: 1
+    - variableName: gain
+      variableType: System.Single
+      variableValue: -0.06
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Clouds
+    genOrEditTypeName: Waves
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 31B8DD
+        time: 0
+      - color: 31B8DD
+        time: 0.45867094
+      - color: 5CB1D1
+        time: 0.52892345
+      - color: BEBEBE
+        time: 0.5413291
+      - color: D4D4D4
+        time: 0.6033112
+      - color: FFFFFF
+        time: 0.80164796
+      isBlend: 1
+    variables:
+    - variableName: waves
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: waves2
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.026
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Stripe
+    genOrEditTypeName: Stripe
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 00E8FF
+        time: 0.22726788
+      - color: FFFFFF
+        time: 0.4214847
+      - color: 00E8FF
+        time: 0.5000076
+      - color: 0D96A4
+        time: 0.61570156
+      - color: 4F4F4F
+        time: 0.7334707
+      - color: 097782
+        time: 0.83677423
+      isBlend: 1
+    variables:
+    - variableName: lineCount
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: lineAngle
+      variableType: System.Single
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Craziness
+    genOrEditTypeName: Perlin
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: FFFFFF
+        time: 0.5000076
+      - color: 000000
+        time: 0.75207144
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: scalex
+      variableType: System.Single
+      variableValue: 5
+    - variableName: scaley
+      variableType: System.Single
+      variableValue: 5
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 4
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.64
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0.00376
+    - variableName: step
+      variableType: System.Single
+      variableValue: 0.85
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 0
+    - variableName: lacunarity
+      variableType: System.Single
+      variableValue: 3
+    - variableName: weight
+      variableType: System.Single
+      variableValue: 0.5
+    - variableName: turbulent
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Fun
+    genOrEditTypeName: Perlin
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0.8347143
+      - color: FFFFFF
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: scalex
+      variableType: System.Single
+      variableValue: 5
+    - variableName: scaley
+      variableType: System.Single
+      variableValue: 5
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 4
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.64
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0.00376
+    - variableName: step
+      variableType: System.Single
+      variableValue: 0.85
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 0
+    - variableName: lacunarity
+      variableType: System.Single
+      variableValue: 2
+    - variableName: weight
+      variableType: System.Single
+      variableValue: 0.406
+    - variableName: turbulent
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Heat Wave
+    genOrEditTypeName: Checkers
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: FF520B
+        time: 0.47058824
+      - color: FFFE00
+        time: 0.49117264
+      - color: FF3100
+        time: 0.6764782
+      - color: FFFE42
+        time: 0.89411765
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 10
+    - variableName: wobbleX
+      variableType: System.Single
+      variableValue: 0.047
+    - variableName: wobbleY
+      variableType: System.Single
+      variableValue: 0.038
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: tear
+      variableType: System.Single
+      variableValue: 0
+    - variableName: sphere
+      variableType: System.Single
+      variableValue: 1
+    - variableName: useGradient
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Shiny
+    genOrEditTypeName: Checkers
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: 7D9BBC
+        time: 0.70453954
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 5
+    - variableName: wobbleX
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbleY
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: tear
+      variableType: System.Single
+      variableValue: 0
+    - variableName: sphere
+      variableType: System.Single
+      variableValue: 0
+    - variableName: useGradient
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Gate
+    genOrEditTypeName: Grid
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: 7D9BBC
+        time: 0.7499962
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 5
+    - variableName: _Type
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: _Width
+      variableType: System.Single
+      variableValue: 0.394
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Gold
+    genOrEditTypeName: Grid
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: FDDA2E
+        time: 0
+      - color: 902E02
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 5
+    - variableName: _Type
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: _Width
+      variableType: System.Single
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Nuts
+    genOrEditTypeName: Triangles
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: 000000
+        time: 0.31404594
+      - color: EEEEEE
+        time: 0.40909436
+      - color: FFFFFF
+        time: 0.5599145
+      - color: A6A6A6
+        time: 0.743801
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scaleX
+      variableType: System.Single
+      variableValue: 3.57
+    - variableName: scaleY
+      variableType: System.Single
+      variableValue: 3.32
+    - variableName: wobblex
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbley
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: flipHalfY
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+    - variableName: hasPreviewImageUpdate
+      variableType: System.Boolean
+      variableValue: False
+  - name: Pattern
+    genOrEditTypeName: Triangles
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: FFFFFF
+        time: 0
+      - color: 000000
+        time: 0.1921416
+      isBlend: 1
+    variables:
+    - variableName: scaleX
+      variableType: System.Single
+      variableValue: 3.05
+    - variableName: scaleY
+      variableType: System.Single
+      variableValue: 5.49
+    - variableName: wobblex
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbley
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: flipHalfY
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Diamonds
+    genOrEditTypeName: Triangles
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: D91E1E
+        time: 0
+      - color: 9C1212
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scaleX
+      variableType: System.Single
+      variableValue: 3.05
+    - variableName: scaleY
+      variableType: System.Single
+      variableValue: 4.38
+    - variableName: wobblex
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbley
+      variableType: System.Single
+      variableValue: 0
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: flipHalfY
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Stars
+    genOrEditTypeName: March Circles
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0.743801
+      - color: FFFFFF
+        time: 0.9772793
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 17
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 17
+    - variableName: detail
+      variableType: System.Single
+      variableValue: 1
+    - variableName: detailWeight
+      variableType: System.Single
+      variableValue: 1
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1
+    - variableName: secondaryScale
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: percent
+      variableType: System.Single
+      variableValue: 0.8
+    - variableName: gain
+      variableType: System.Single
+      variableValue: -0.04
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Wood, Kinda
+    genOrEditTypeName: Perlin
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 6C4C3D
+        time: 0
+      - color: 957059
+        time: 0.31404594
+      - color: 89634D
+        time: 0.41734952
+      - color: A4816B
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 15
+    - variableName: scalex
+      variableType: System.Single
+      variableValue: 4.3
+    - variableName: scaley
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.82
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0.00372
+    - variableName: step
+      variableType: System.Single
+      variableValue: -0.53
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: -0.324
+    - variableName: lacunarity
+      variableType: System.Single
+      variableValue: 2
+    - variableName: weight
+      variableType: System.Single
+      variableValue: 0.761
+    - variableName: turbulent
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0.059
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+    - variableName: hasPreviewImageUpdate
+      variableType: System.Boolean
+      variableValue: False
+  - name: Magic Stone
+    genOrEditTypeName: DGN
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 948579
+        time: 0.24419013
+      - color: 1C0A0C
+        time: 0.7307698
+      - color: 6CD8AD
+        time: 0.9710689
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 5
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 10
+    - variableName: detail
+      variableType: System.Single
+      variableValue: 1
+    - variableName: detailWeight
+      variableType: System.Single
+      variableValue: 0.96
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1.12
+    - variableName: secondaryScale
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0.146
+    - variableName: turbulent
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.109
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Stone Grass
+    genOrEditTypeName: Vornoi 2
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 517658
+        time: 0
+      - color: 4D4D4D
+        time: 0.19421683
+      - color: 606060
+        time: 0.5371939
+      - color: A1A1A1
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: pointCount
+      variableType: System.Int32
+      variableValue: 13
+    - variableName: second
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: lastPointCount
+      variableType: System.Int32
+      variableValue: 13
+    - variableName: hasPoints
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: yPosition
+      variableType: System.Single
+      variableValue: 0.324
+    - variableName: yMultiplier
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 5
+    - variableName: warpX
+      variableType: System.Single
+      variableValue: 0
+    - variableName: warpY
+      variableType: System.Single
+      variableValue: 0
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1.8
+    - variableName: gain
+      variableType: System.Single
+      variableValue: -1.52
+    - variableName: octaveWeight
+      variableType: System.Single
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Sharp
+    genOrEditTypeName: Waves
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 919AA1
+        time: 0
+      - color: B6CFE3
+        time: 0.080582894
+      - color: A9BAC7
+        time: 0.3264515
+      - color: 8C8C8C
+        time: 0.6177615
+      - color: DD1B16
+        time: 0.66529334
+      - color: FF7D00
+        time: 0.71075
+      - color: FFAB72
+        time: 0.8842908
+      - color: E83A0F
+        time: 0.9917296
+      isBlend: 1
+    variables:
+    - variableName: waves
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: waves2
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: power
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Nice Cubes
+    genOrEditTypeName: Cubes
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 5384C8
+        time: 0
+      - color: BCB564
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: topValue
+      variableType: System.Single
+      variableValue: 1
+    - variableName: leftValue
+      variableType: System.Single
+      variableValue: 0.788
+    - variableName: rightValue
+      variableType: System.Single
+      variableValue: 0.475
+    - variableName: smoothPower
+      variableType: System.Single
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Funky
+    genOrEditTypeName: Cubes
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 9F3DD4
+        time: 0.81197834
+      - color: 000000
+        time: 0.90908676
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: topValue
+      variableType: System.Single
+      variableValue: 0.379
+    - variableName: leftValue
+      variableType: System.Single
+      variableValue: 0.215
+    - variableName: rightValue
+      variableType: System.Single
+      variableValue: 0.091
+    - variableName: smoothPower
+      variableType: System.Single
+      variableValue: 1.27
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Future Camo
+    genOrEditTypeName: March Noise
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 9F3DD4
+        time: 0.33884183
+      - color: 000000
+        time: 0.79339284
+      - color: D4963D
+        time: 0.8181887
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 7
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: detail
+      variableType: System.Single
+      variableValue: 1
+    - variableName: detailWeight
+      variableType: System.Single
+      variableValue: 0.95
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 1
+    - variableName: secondaryScale
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: percent
+      variableType: System.Single
+      variableValue: 1
+    - variableName: gain
+      variableType: System.Single
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Bones
+    genOrEditTypeName: Checkers
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: B6CFE3
+        time: 0.30099946
+      - color: A49AD7
+        time: 0.4119936
+      - color: 3A1B2E
+        time: 0.55716795
+      - color: 000000
+        time: 0.70891887
+      - color: 272A2C
+        time: 0.8852369
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: wobbleX
+      variableType: System.Single
+      variableValue: 0.5
+    - variableName: wobbleY
+      variableType: System.Single
+      variableValue: 0.5
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: tear
+      variableType: System.Single
+      variableValue: 0.082
+    - variableName: sphere
+      variableType: System.Single
+      variableValue: 1
+    - variableName: useGradient
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Bones 2
+    genOrEditTypeName: Checkers
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: E9ECCC
+        time: 0.1714809
+      - color: 8287B2
+        time: 0.4119936
+      - color: 3A1B2E
+        time: 0.55716795
+      - color: 000000
+        time: 0.70891887
+      - color: 272A2C
+        time: 0.8852369
+      isBlend: 1
+    variables:
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: wobbleX
+      variableType: System.Single
+      variableValue: 0.226
+    - variableName: wobbleY
+      variableType: System.Single
+      variableValue: 0.242
+    - variableName: wobbleSize
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: tear
+      variableType: System.Single
+      variableValue: 0.082
+    - variableName: sphere
+      variableType: System.Single
+      variableValue: 1
+    - variableName: useGradient
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Octaves
+    genOrEditTypeName: Truchet
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: FFFFFF
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 8
+    - variableName: randomization
+      variableType: System.Single
+      variableValue: 92
+    - variableName: octaves
+      variableType: System.Single
+      variableValue: 8
+    - variableName: points
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: overrideTile
+      variableType: System.Int32
+      variableValue: -1
+    - variableName: testPoint
+      variableType: UnityEngine.Vector4
+      variableValue: (0.0, 0.0, 0.0, 0.0)
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: 7 Segment Maze
+    genOrEditTypeName: Truchet
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: FFFFFF
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 8
+    - variableName: randomization
+      variableType: System.Single
+      variableValue: 92
+    - variableName: octaves
+      variableType: System.Single
+      variableValue: 8
+    - variableName: points
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: overrideTile
+      variableType: System.Int32
+      variableValue: -1
+    - variableName: testPoint
+      variableType: UnityEngine.Vector4
+      variableValue: (0.0, 0.0, 0.0, 0.0)
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Multi
+    genOrEditTypeName: Truchet
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 4CE263
+        time: 0
+      - color: 4B8367
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 16
+    - variableName: randomization
+      variableType: System.Single
+      variableValue: 111
+    - variableName: octaves
+      variableType: System.Single
+      variableValue: 8
+    - variableName: points
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: overrideTile
+      variableType: System.Int32
+      variableValue: -1
+    - variableName: testPoint
+      variableType: UnityEngine.Vector4
+      variableValue: (0.00, 0.00, 0.00, 0.00)
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+    - variableName: hasPreviewImageUpdate
+      variableType: System.Boolean
+      variableValue: False
+  - name: Teeth
+    genOrEditTypeName: Houndstooth
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: FFFFFF
+        time: 0
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Copper
+    genOrEditTypeName: Houndstooth
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: B2A5B1
+        time: 0
+      - color: 452110
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Odd
+    genOrEditTypeName: Houndstooth
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: B6CFE3
+        time: 0.23967345
+      - color: 3A1B2E
+        time: 0.6074312
+      - color: DD1B16
+        time: 0.66529334
+      - color: FF7D00
+        time: 0.71075
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Triangles
+    genOrEditTypeName: Truchet
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: F9AD2C
+        time: 0
+      - color: 36968E
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 8
+    - variableName: randomization
+      variableType: System.Single
+      variableValue: 92
+    - variableName: octaves
+      variableType: System.Single
+      variableValue: 8
+    - variableName: points
+      variableType: System.Boolean
+      variableValue: False
+    - variableName: overrideTile
+      variableType: System.Int32
+      variableValue: -1
+    - variableName: testPoint
+      variableType: UnityEngine.Vector4
+      variableValue: (0.0, 0.0, 0.0, 0.0)
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Flat
+    genOrEditTypeName: Cubes
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: F9AD2C
+        time: 0
+      - color: 36968E
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: topValue
+      variableType: System.Single
+      variableValue: 0.128
+    - variableName: leftValue
+      variableType: System.Single
+      variableValue: 0.286
+    - variableName: rightValue
+      variableType: System.Single
+      variableValue: 0.543
+    - variableName: smoothPower
+      variableType: System.Single
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Random Plaid
+    genOrEditTypeName: Plaid
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 021734
+        time: 0
+      - color: 723B5E
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: plaidCount
+      variableType: System.Int32
+      variableValue: 4
+    - variableName: plainMinWidth
+      variableType: System.Single
+      variableValue: 0.01323529
+    - variableName: plaidMaxWidth
+      variableType: System.Single
+      variableValue: 0.0632353
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Random Box Plaid
+    genOrEditTypeName: Plaid
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 021734
+        time: 0
+      - color: 723B5E
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 2
+    - variableName: plaidCount
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: plainMinWidth
+      variableType: System.Single
+      variableValue: 0.002205878
+    - variableName: plaidMaxWidth
+      variableType: System.Single
+      variableValue: 0.03014707
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Green
+    genOrEditTypeName: Scales
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 421315
+        time: 0
+      - color: 198561
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: xScale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: yScale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: power
+      variableType: System.Single
+      variableValue: 20
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Scales
+    genOrEditTypeName: Scales
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: DBC315
+        time: 0
+      - color: 914917
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: xScale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: yScale
+      variableType: System.Single
+      variableValue: 2
+    - variableName: power
+      variableType: System.Single
+      variableValue: 3.43
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Polka
+    genOrEditTypeName: Dots
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0.22520791
+      - color: FFFFFF
+        time: 1
+      isBlend: 0
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 11
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: scaleMulti
+      variableType: System.Single
+      variableValue: 3.48
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: 3Tone
+    genOrEditTypeName: Dots
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: B99881
+        time: 0
+      - color: 175461
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 4
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 3
+    - variableName: scaleMulti
+      variableType: System.Single
+      variableValue: 4.5
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Buttons
+    genOrEditTypeName: Dots
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 00E8FF
+        time: 0.006195163
+      - color: FFFFFF
+        time: 0.17975128
+      - color: 00E8FF
+        time: 0.47107652
+      - color: 0D96A4
+        time: 0.6280919
+      - color: 4F4F4F
+        time: 0.76446176
+      - color: 097782
+        time: 1
+      isBlend: 0
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 5
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 1
+    - variableName: scaleMulti
+      variableType: System.Single
+      variableValue: 2
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Grunge
+    genOrEditTypeName: Strokes
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: FFFFFF
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 10
+    - variableName: layerWeight
+      variableType: System.Single
+      variableValue: 0.864
+    - variableName: detailSize
+      variableType: System.Single
+      variableValue: 1
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.098
+    - variableName: scratchCount
+      variableType: System.Single
+      variableValue: 1
+    - variableName: brightness
+      variableType: System.Single
+      variableValue: 0.223
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 2.69
+    - variableName: squiggles
+      variableType: System.Single
+      variableValue: 0.88
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 5
+    - variableName: testFloat
+      variableType: System.Single
+      variableValue: 1
+    - variableName: sides
+      variableType: System.Single
+      variableValue: 0.238
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 5.19
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+  - name: Strokes
+    genOrEditTypeName: Strokes
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 000000
+        time: 0
+      - color: FFFFFF
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 13
+    - variableName: layerWeight
+      variableType: System.Single
+      variableValue: 0
+    - variableName: detailSize
+      variableType: System.Single
+      variableValue: 1
+    - variableName: power
+      variableType: System.Single
+      variableValue: 0.145
+    - variableName: scratchCount
+      variableType: System.Single
+      variableValue: 2.05
+    - variableName: brightness
+      variableType: System.Single
+      variableValue: 0.254
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 2.79
+    - variableName: squiggles
+      variableType: System.Single
+      variableValue: 0
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 8
+    - variableName: testFloat
+      variableType: System.Single
+      variableValue: 1
+    - variableName: sides
+      variableType: System.Single
+      variableValue: 0.329
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+    - variableName: hasPreviewImageUpdate
+      variableType: System.Boolean
+      variableValue: False
+  - name: Funky Grunge
+    genOrEditTypeName: DGN
+    gradient:
+      alphaKeys:
+      - time: 0
+        alpha: 1
+      - time: 1
+        alpha: 1
+      colorKeys:
+      - color: 8E7878
+        time: 0
+      - color: 3A3939
+        time: 0.3966888
+      - color: 000000
+        time: 1
+      isBlend: 1
+    variables:
+    - variableName: seed
+      variableType: System.Single
+      variableValue: 0.54
+    - variableName: scale
+      variableType: System.Int32
+      variableValue: 4
+    - variableName: octaves
+      variableType: System.Int32
+      variableValue: 14
+    - variableName: detail
+      variableType: System.Single
+      variableValue: 1
+    - variableName: detailWeight
+      variableType: System.Single
+      variableValue: 0.95
+    - variableName: contrast
+      variableType: System.Single
+      variableValue: 2.73
+    - variableName: secondaryScale
+      variableType: System.Single
+      variableValue: 1
+    - variableName: type
+      variableType: System.Int32
+      variableValue: 0
+    - variableName: gain
+      variableType: System.Single
+      variableValue: -0.684
+    - variableName: turbulent
+      variableType: System.Boolean
+      variableValue: True
+    - variableName: power
+      variableType: System.Single
+      variableValue: 1
+    - variableName: T
+      variableType: UnityEngine.Texture2D
+      variableValue: ' (UnityEngine.Texture2D)'
+    - variableName: hasPreviewImageUpdate
+      variableType: System.Boolean
+      variableValue: False
