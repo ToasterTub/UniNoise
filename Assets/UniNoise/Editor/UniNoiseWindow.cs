@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -618,6 +618,11 @@ public class UniNoiseWindow : EditorWindow
             if (typeColorButton("Dots"))
             {
                 selectedInfo = new dotsSettings(this);
+            }
+
+            if (typeColorButton("Channel2Channel"))
+            {
+                selectedInfo = new channel2Channel(this);
             }
 
             resetTypeColorButtons();
@@ -1448,6 +1453,7 @@ public class newPerlinSettings : GenOrEditClass
     // set all of the variables setup above with GUI goodness
     public override void doGUI()
     {
+        // only use this if you want this type to have presets
         if (base.genericMenuReturnsReset())
         {
             reset();
@@ -1522,6 +1528,86 @@ public class newPerlinSettings : GenOrEditClass
         }
     }
 }
+
+
+public class channel2Channel : GenOrEditClass
+{
+
+    public override string getTextureName()
+    {
+        return "Channel2Channel";
+    }
+
+
+    UniNoiseWindow myWindow;
+    Material myMat;
+
+    public Texture2D redChannel;
+    public Texture2D greenChannel;
+    public Texture2D blueChannel;
+
+    public bool rAlpha;
+    public bool gAlpha;
+    public bool bAlpha;
+
+    // find the shader and do the first preview render
+    public channel2Channel(UniNoiseWindow window)
+    {
+        myWindow = window;
+
+        myMat = new Material(Shader.Find("Hidden/UniNoiseChannel2Channel"));
+
+        updateImage();
+    }
+
+    // reset to defaults.
+    void reset()
+    {
+        myWindow.selectedInfo = new channel2Channel(myWindow);
+    }
+
+    // set the material's values and render the preview
+    public override void updateImage()
+    {
+        myMat.SetTexture("_GradientTex", myWindow.gradientTexture());
+        myMat.SetTexture("_TexR", redChannel);
+        myMat.SetInt("_RAlpha", rAlpha ? 1 : 0);
+        myMat.SetTexture("_TexG", greenChannel);
+        myMat.SetInt("_GAlpha", gAlpha ? 1 : 0);
+        myMat.SetTexture("_TexB", blueChannel);
+        myMat.SetInt("_BAlpha", bAlpha ? 1 : 0);
+        //
+        myWindow.blitmat = myMat;
+        base.applyGeneration(myWindow, myMat);
+    }
+
+    // set all of the variables setup above with GUI goodness
+    public override void doGUI()
+    {
+        //if (base.genericMenuReturnsReset())
+        //{
+        //    reset();
+        //}
+
+        EditorGUI.BeginChangeCheck();
+
+        // GUI MAYHEM vvvv
+
+        rAlpha = EditorGUILayout.Toggle("Use Red Alpha", rAlpha);
+        redChannel = EditorGUILayout.ObjectField("Red Channel", redChannel, typeof(Texture2D), false) as Texture2D;
+        gAlpha = EditorGUILayout.Toggle("Use Green Alpha", gAlpha);
+        greenChannel = EditorGUILayout.ObjectField("Green Channel", greenChannel, typeof(Texture2D), false) as Texture2D;
+        bAlpha = EditorGUILayout.Toggle("Use Blue Alpha", bAlpha);
+        blueChannel = EditorGUILayout.ObjectField("Blue Channel", blueChannel, typeof(Texture2D), false) as Texture2D;
+
+        // Render the preview if the mayhem has changed.
+        if (EditorGUI.EndChangeCheck())
+        {
+            updateImage();
+        }
+    }
+}
+
 
 public class vornoiSettings : GenOrEditClass
 {
